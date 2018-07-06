@@ -1,0 +1,49 @@
+{
+  "name": "elmer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "server": "webpack-dev-server --config config/webpack.dev.config.js --inline --progress --port 8000",
+    "deploy": "webpack --config config/webpack.prod.config.js --optimize-minimize && rsync -ruv ./build/* typershub:/var/www/html/",
+    "dll": "webpack --config config/webpack.dll.config.js",
+    "build": "webpack --config config/webpack.prod.config.js",
+    "start": "npm run server"
+  },
+  "dependencies": {
+    "@radial/helpers": "0.0.1",
+    "@types/jquery": "^3.3.1",
+    "@types/node": "^6.0.103",
+    "@types/prop-types": "^15.5.3",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.1",
+    "@types/react-router": "^4.0.23",
+    "@types/react-router-dom": "^4.2.3",
+    "@types/react-transition-group": "^2.0.7",
+    "awesome-typescript-loader": "^3.2.3",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.7.2",
+    "prop-types": "^15.6.2",
+    "qs": "^6.5.1",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "typescript": "^2.7.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^2.30.1",
+    "ts-node": "^5.0.1",
+    "webpack-bundle-analyzer": "^2.10.0"
+  }
+}

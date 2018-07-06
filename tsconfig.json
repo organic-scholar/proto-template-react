@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "es2015"],
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compileOnSave": false,
+  "buildOnSave": false
+}
