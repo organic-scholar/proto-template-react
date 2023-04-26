@@ -22,9 +22,9 @@
   version "6.0.113"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.113.tgz#4b41f38ad03e4b41f9dc259b3b58aecb22c9aebc"
 
-"@types/prop-types@^15.5.2":
-  version "15.5.3"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.3.tgz#bef071852dca2a2dbb65fecdb7bfb30cedae2de2"
+"@types/prop-types@*", "@types/prop-types@^15.5.3":
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
 
 "@types/react-dom@^16.0.1":
   version "16.0.6"
@@ -54,11 +54,23 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.0.35":
+"@types/react@*":
   version "16.4.6"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.6.tgz#5024957c6bcef4f02823accf5974faba2e54fada"
   dependencies:
     csstype "^2.2.0"
+
+"@types/react@^16.4.6":
+  version "16.14.40"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.40.tgz#cbf1c6249e9a96eb1badc7f32f1055e532e21c72"
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.3"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
 
 abbrev@1:
   version "1.1.1"
@@ -844,7 +856,7 @@ compressible@~2.0.13:
 
 compression@^1.5.2:
   version "1.7.2"
-  resolved "http://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
+  resolved "https://registry.npmjs.org/compression/-/compression-1.7.2.tgz#aaffbcd6aaf854b44ebb280353d5ad1651f59a69"
   dependencies:
     accepts "~1.3.4"
     bytes "3.0.0"
@@ -1068,6 +1080,10 @@ csso@~2.3.1:
 csstype@^2.2.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.5.tgz#4125484a3d42189a863943f23b9e4b80fedfa106"
+
+csstype@^3.0.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -2912,13 +2928,9 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
-
-minimist@^1.1.3, minimist@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.6:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
 
 minipass@^2.2.1, minipass@^2.3.3:
   version "2.3.3"
@@ -2948,10 +2960,10 @@ mixin-object@^2.0.1:
     is-extendable "^0.1.1"
 
 mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.6.tgz#7def03d2432dcae4ba1d611445c48396062255f6"
   dependencies:
-    minimist "0.0.8"
+    minimist "^1.2.6"
 
 ms@2.0.0:
   version "2.0.0"
